@@ -74,35 +74,36 @@ create table order2product(
 );
 
 insert into supplier(name, address, phone, representative)
-values (123,123,123,123);
-values (123,123,123,123);
-values (123,123,123,123);
+values ('Howard Bancorp, Inc.', '46994 Dahle Court', '255-178-5784', 'NASDAQ');
+values ('HNI Corporation', '9888 Kingsford Hill', '637-915-8773', 'NYSE');
+values ('Jensyn Acquistion Corp.', '5427 Banding Court', '242-947-5006', 'NASDAQ');
 
 insert into product(code, title, supplier, initial_price, retail_value)
-values (123,123,123,123,123);
-values (123,123,123,123,123);
-values (123,123,123,123,123);
+values ('48131-3T352','Pipe, Brake Booster Accumulator', '1', '$7.54', '$5.63');
+values ('48131-3T352','Pipe Assy, Exhaust, Front NO.2', '2', '$1.57', '$5.25');
+values ('48131-3T352', 'Hose, Flexible(For Rear RH)', '3', '$2.12', '$2.75');
 
 insert into user_info (name, surname)
-values (123,123);
-values (123,123);
-values (123,123);
+values ('Adelina', 'Muzzall');
+values ('Sonnie', 'Casier');
+values ('Darlleen', 'Morena');
 
 insert into roles (name)
-values (123);
-values (123);
-values (123);
+values ('CUSTOMER');
+values ('REGULAR CUSTOMER');
+values ('VIP CUSTOMER');
 
 insert into "USER" (email, password, info, role)
-values (123,123,123,123);
-values (123,123,123,123);
-values (123,123,123,123);
+values ('dalhirsi1@accuweather.com', 'obwWfM9K', '1', 'CUSTOMER' );
+values ('tjaksic0@moonfruit.com', 'Pdpwf8vMBjc', '2','REGULAR CUSTOMER');
+values ('mkaesmakers2@hao123.com', '5EXnfh', '3', 'VIP CUSTOMER');
 
 insert into "ORDER" ("USER", created)
-values (123,123);
-values (123,123);
-values (123,123);
+values ('1', '1578247478');
+values ('2', '1376273489');
+values ('3', '1181567894');
 
 insert into order2product ("ORDER", product)
-values (123,123);
-values (123,123);
+values ('1', '1');
+values ('2', '2');
+values ('3', '3');
